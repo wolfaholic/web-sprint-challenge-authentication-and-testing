@@ -59,7 +59,7 @@ describe('auth tests', () => {
       .post('/api/auth/register')
       .send({ username: 'Andrew', password: '1234'})
   
-      expect(test.body.message).toBe('username already exists');
+      expect(test.body.message).toBe('username taken');
     })
   })
 
